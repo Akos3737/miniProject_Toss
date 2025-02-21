@@ -1,0 +1,48 @@
+a {
+  text-decoration: none; /* 기본적으로 밑줄 제거 */
+  color: #6c757d; /* 기본 색상 */
+}
+
+a:hover {
+  text-decoration: underline; /* hover 시 밑줄 추가 */
+  color: #0056B3 !important; /* hover 시 파란색으로 변경 */
+}
+    .bg-light {
+      background-color: #F9FAFB !important;
+    }
+
+    h5 {
+      font-weight: bold;
+    }
+
+    #info {
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .footer-links {
+    display: grid;
+     grid-template-columns: repeat(4, calc(20% - 15px)); /* 각 항목의 너비(width)를 20%에서 간격(15px)만큼 빼기 */
+    gap: 7px; /* 행 간격 유지 */
+    margin-top: 20px;
+    font-size: small;
+    }
+
+    .footer-links a {
+      color: #6c757d;
+    }
+
+    .text-muted {
+  margin-top: 10px;
+    }
+
+    ul.list-unstyled li {
+  margin-bottom: 5px; /*각 li(링크) 하단 여백 5px 추가*/
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    grid-template-columns: 1fr; /* 작은 화면에서는 1개씩 보이게 설정 */
+  }
+}
+   

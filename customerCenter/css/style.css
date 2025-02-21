@@ -1,0 +1,539 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 50px; /* 네비게이션 바 높이에 맞춰 여백을 추가 */
+}
+
+/* 섹션 스타일 */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100% ; /* 뷰포트 전체 너비 */
+  margin-left: 0; /* 중앙 정렬된 컨테이너 내에서도 전체 너비 효과 */
+  padding: 100px 0;
+  box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+.input {
+  width: 40%; /* 기본적으로 너비를 100%로 설정 */
+  max-width: 80%; /* 최대 너비를 80%로 설정 */
+  height: auto;
+}
+/* 섹션버튼 스타일 */
+.help .button-container {
+  display: flex;
+  justify-content: space-between; /* 버튼들 간 간격을 고르게 분배 */
+  gap: 10px; /* 버튼 간의 간격을 10px로 설정 */
+  flex-wrap: wrap; /* 화면 크기에 따라 버튼들이 자동으로 줄바꿈 되도록 설정 (반응형 지원) */
+}
+
+.help .btn {
+  padding: 5px 10px;
+  background-color: #F2F4F6;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.help .btn:hover {
+  background-color: #E5E8EB;
+}
+.help .btn:focus,.btn:active  {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+/* 제목 스타일 */
+body div h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 20px;
+}
+
+/* 버튼 스타일 */
+body .btn.btn_custom {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  font-size: 14px;
+  width: 125px;
+  transition: all 0.2s ease; 
+}
+#first_btn {
+  width: 100px;
+}
+body .btn.btn_custom:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}
+
+body .btn_custom svg {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 5px;
+}
+#btn_more {
+  width: 100px;
+  margin: 0px;
+  float: left;
+}
+/* 네비게이션  */
+
+body .navbar {
+  border: none ;
+  background-color: white ;
+  box-shadow: none ;
+}
+/* 스크롤시 하단 테두리 생김 */
+.nav_container.scrolled {
+  border-bottom: 1px solid #E5E7EA; /* border-bottom 추가 */
+}
+nav > .container {
+  background-color: white;
+}
+
+nav img {
+  margin-top: 10px;
+  margin-left: 400px;
+  width: 82px;
+}
+
+#myNavbar {
+  margin-top: 10px;
+  margin-right: 400px;
+  font-size: 16px;
+}
+
+.navbar-toggle {
+  display: block !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  border-collapse: 10px;
+  color: white;
+}
+
+/* 검색창 스타일 */
+.help .search-box-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.help .search-box {
+  border: none;
+  font-size: 18px;
+  color: #333;
+  width: 800px;
+  outline: none;
+  background: none;
+  padding-left: 45px; /* 아이콘과 텍스트 간격 확보 */
+  cursor: pointer;
+}
+.help .search-box-container {
+  border: 2px solid #ccc;
+  transition: border 0.1s linear; /* 애니메이션 추가 */
+}
+
+.help .search-box-container:hover {
+  border-color: #007bff;  /* 파란색 테두리 강조 */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* 파란색 그림자 */
+}
+.help .search-box-container.focused {
+  border-color: #007bff;  /* 파란색 테두리 강조 */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* 파란색 그림자 */
+}
+.search-icon {
+  position: absolute;
+  left: 15px; /* 왼쪽 정렬 */
+  color: #bbb; /* 아이콘 색상 */
+  font-size: 18px;
+}
+
+/* 전화번호 볼드체 */
+.bold {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 상담센터 */
+/* 상담섹션 전체 */
+.customer {
+  background-color: #EEF6F3;
+  display: flex;
+   align-items: center;
+   padding:18px;
+}
+
+/* 전체 input 영역: 좌측과 우측 컬럼 배치 */
+.customer .input {
+  display: flex;
+  flex-direction: row; /* 좌우로 컬럼 배치 */
+  justify-content: space-between;
+}
+
+/* 좌측 컬럼: 제목과 전화번호 */
+.left-col {
+  flex: 1; /* 가용 공간 모두 사용 */
+  padding-top:60px;
+}
+
+/* 제목 스타일 */
+.left-col h2 {
+  margin: 0;
+  text-align: left;
+}
+
+/* 전화번호 영역: 두 개의 상담 정보를 나란히 배치 */
+.contact_info {
+  display: flex;              /* 자식 요소들을 가로로 배치 */
+  flex-direction: row;        /* 수평 배열 */
+  align-items: center;        /* 세로 중앙 정렬 */
+  justify-content: center;    /* 가로 중앙 정렬 */
+  font-size: medium;
+  min-width: 500px;           /* 전화번호 행의 최소 너비 설정 */
+}
+.contact_info .col-6 {
+  flex: 1;                    /* 두 영역이 동일한 공간 차지 */
+  text-align: center;         /* 내용 중앙 정렬 */
+  margin: 10px 0;
+}
+/* 전화번호 구분선 | */
+
+.contact_info line {
+  display: block;             /* 요소를 블록 레벨로 처리 */
+  width: 1px;
+  height: 60px;
+  background-color: #D5DFDF;  /* 구분선 색상 */
+  margin: 25px 20px;          /* 좌우 여백 */
+}
+ /* 우측 컬럼: 이미지  */
+.right-col img.img-fluid {
+  right: 10%;
+  top: 6%;
+  object-fit: cover;
+  object-position: top;
+  width: 300px; /* 원하는 이미지 너비로 조정 */
+  height: auto;
+}
+
+/* 피해 신고하기 */
+.report {
+  align-items: center;
+  }
+
+.first-row .btn.btn_custom {
+  width: 99%;
+}
+
+.second-row {
+  display: flex;
+}
+
+.second-row .btn.btn_custom {
+  flex-basis: 25%;
+  margin-right: 10px;
+}
+
+/* 토스 안심보상제 */
+
+.compensation {
+   background-color: #F5F6F8;
+   padding: 20px;
+  height: 400px; /* 부모 요소의 높이를 이미지와 맞추기 */
+}
+
+.compensation .input {
+  display: flex;
+  align-items: center; /* 수직 정렬 */
+  justify-content: space-between; /* 양쪽 끝 정렬 */
+  gap: 20px; /* 요소 간 간격 */
+}
+
+.comp_text,
+#comp_img {
+  flex: 1; /* 두 요소가 같은 너비 차지 */
+  max-width: 50%; /* 최대 너비 제한 */
+}
+
+#comp_img img {
+  width: 100%; /* 부모 크기에 맞게 이미지 조정 */
+  height: auto; /* 비율 유지 */
+}
+
+/* 자주 묻는 질문(whathelp) */
+.whathelp .input ul {
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding: 15px 20px; /* 여백 추가 */
+  margin: 20px 0;
+  text-decoration: none; /* 밑줄 제거 */
+  font-size: larger;
+}
+.whathelp a {
+  text-decoration: none !important; /* 밑줄 제거 */
+  color: inherit; /* 부모 요소의 색상 상속 (링크 기본 색상 유지) */
+}
+
+.whathelp a:hover {
+  color: inherit; /* hover 시 색상 변화 없애기 */
+}
+.whathelp .input a ul {
+  text-decoration: none; /* 기본적으로 밑줄 제거 */
+  }
+
+.whathelp .input ul:hover {
+  background-color: #F2F3F5; /* hover 시 배경 색상 변경 */
+  text-decoration: none; /* 기본적으로 밑줄 제거 */
+}
+.whathelp a i {
+  margin-right: 15px; /* 아이콘과 텍스트 사이에 10px 여백 추가 */
+}
+
+.whathelp .search-box-container { 
+  display: flex;
+  align-items: center;
+  background-color: #FAFAFB;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.whathelp .search-box-container .search-box {
+  flex-grow: 1; /* input 요소가 나머지 공간을 차지하도록 설정 */
+  border: none; /* input 요소의 기본 테두리 제거 */
+  outline: none; /* 포커스 시 나타나는 기본 테두리 제거 */
+  margin-left: 40px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #FAFAFB;
+}
+
+#fullhelp{
+  margin-top: 60px;
+}
+#fullhelp a{
+  color: #3182F7; /* 기본 색상 */
+  text-decoration: none; /* 기본적으로 밑줄 제거 */
+}
+
+#fullhelp a:hover {
+  color: #3072DB; /* hover 시 색상 변경 */
+}
+/* 반응형 적용 */
+
+/* 태블릿 화면에서의 스타일 */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .input {
+    width: 100%; /* input의 너비를 100%로 설정하여 화면에 꽉 채우기 */
+    flex-direction: column !important;
+  }
+  
+  /* 오른쪽 이미지 컬럼 */
+  .right-col img {
+    width: 100%;  /* 이미지를 화면에 맞게 확장 */
+    height: auto;
+    margin: 0 auto;  /* 중앙 정렬 */
+  }
+  
+  /* 상담센터의 입력란(좌측/우측 컬럼) */
+  .customer .input {
+    display: flex;
+    align-items: center; /* 중앙 정렬 */
+  }
+
+  .contact_info {
+    min-width: 100%; /* 화면 크기에 맞게 최소 너비를 100%로 설정 */
+    margin: 20px 0; /* 상하 여백 추가 */
+    flex-direction: row; /* 세로 정렬로 변경 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
+
+  /* 버튼을 모바일에 맞게 100%로 설정 */
+  .help .button-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .help .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .first-row .btn.btn_custom,
+  .second-row .btn.btn_custom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* 검색창 스타일 */
+  .help .search-box-container {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .help .search-box-container:hover,
+  .help .search-box-container.focused {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .help .search-box {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  /* 고객센터 전화번호 영역 조정 */
+  .customer .input {
+    width: 100%;
+    padding: 0 15px; /* 패딩을 추가하여 좌우 여백을 줄임 */
+  }
+
+  /* 전체적으로 좌우 여백 조정 */
+  .section {
+    padding: 50px 15px; /* 모바일에서 더 좁은 여백 설정 */
+  }
+
+  .left-col, .right-col {
+    width: 100%; /* 100% 너비로 설정하여 화면에 맞추기 */
+    margin: 0;
+    text-align: center;
+    padding: 0; /* 불필요한 패딩 제거 */
+  }
+}
+
+/* 작은 화면에서 레이아웃 변경 (모바일) */
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+  /* 토스 안심보상제 */
+  .compensation .input {
+    flex-direction: column; /* 세로 정렬 */
+    text-align: center;
+  }
+
+  .comp_text,
+  #comp_img {
+    max-width: 100%; /* 모바일에서 100% 너비 사용 */
+  }
+
+  #comp_img img {
+    width: 100%;
+    max-width: 100%; /* 모바일에서 이미지 크기 조절 */
+    margin: 0 auto;
+  }
+
+  .compensation {
+    padding: 20px;
+    height: auto; /* 부모 요소 높이를 자동으로 조정 */
+  }
+/* 변경사항: 연락처 영역의 최소 너비 고정 및 중앙 정렬 */
+  .contact_info {
+    min-width: 250px;
+    margin: 20px auto;
+  }
+  .left-col, .right-col {
+    min-width: 100%;
+    text-align: center;
+  }
+  
+   /* 버튼 너비를 100%로 조정 */
+  .first-row .btn.btn_custom,
+  .second-row .btn.btn_custom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .help .button-container {
+    justify-content: center; /* 모바일에서 버튼 중앙 정렬 */
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* 검색창 및 버튼 스타일 */
+  .help .search-box-container {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .help .search-box-container:hover,
+  .help .search-box-container.focused {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .help .search-box {
+    width: 100%;
+    padding-left: 40px;
+  }
+  .customer {
+    padding: 10px 15px; /* 여백을 적절히 줄임 */
+  }
+  .input {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+   .help .btn,
+  .btn.btn_custom {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .right-col  {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .left-col  {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .section {
+    width: 100%;
+    margin: 0; /* 좌우 여백 제거 */
+    padding: 50px 0;  /* 모바일에 적합한 패딩 (필요에 따라 조정) */
+  }
+  /* 추가: 좌측/우측 컬럼에 여백을 줄여서 공간 효율성 높이기 */
+  .left-col, .right-col {
+    padding: 0; /* 불필요한 여백 제거 */
+  }
+  .customer .input {
+    display: flex;
+    flex-direction: column; /* 좌우로 컬럼 배치 */
+    justify-content: space-between;
+  }
+
+  
+}
+
+
+
+

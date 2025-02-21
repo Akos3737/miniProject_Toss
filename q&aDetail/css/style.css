@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  border: none !important;
+  background-color: white !important;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  height: 60px;
+}
+
+nav > .container {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  height: 60px;
+}
+
+nav img {
+  margin-top: 13px;
+  margin-left: 40px;
+  width: 90px;
+}
+
+#myNavbar {
+  margin-top: 5px;
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+.navbar-toggle {
+  margin-top: 13px;
+  margin-right: 50px;
+  display: block !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  border-collapse: 10px;
+  color: white;
+}
+.first_box {
+  margin-top: 70px;
+}
+.content {
+  padding-top: 120px;
+  text-align: center;
+}
+.contact-section h2 {
+font-size: 24px;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+.contact-section p {
+font-size: 16px;
+color: #666;
+}
+.contact-section strong {
+color: #000;
+}
+
+.contact-numbers {
+display: flex;
+justify-content: center;
+gap: 30px;
+font-weight: bold;
+margin-top: 10px;
+align-items: center; /* 이미지와 텍스트 수평 정렬 */
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom:30px;
+}
+.search-box-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-box {
+    border: none;
+    font-size: 30px;
+    color: rgb(228, 225, 225);
+    width: 100%;
+    outline: none;
+    background: none;
+    padding-left: 45px; /* 아이콘과 텍스트 간격 확보 */
+}
+.search-box::placeholder {
+  color: rgb(189, 189, 194); /* 원하는 색상으로 변경 */
+  opacity: 1; /* 투명도를 조정 (기본값은 0.5~0.7 정도) */
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* 왼쪽 정렬 */
+    color: #e0dede; /* 아이콘 색상 */
+    font-size: 28px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  float: left;
+}
+.category {
+  padding: 20px 0;
+  padding-left: 10px;
+  color: gray;
+  cursor: pointer;
+  font-size: 20px;
+  border : none;
+}
+.category:hover{
+  color: rgb(108, 108, 235);
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  border-collapse: 10px;
+}
+.list_parent {
+  display: flex;
+  margin-left: 30px;
+  width: 100%;
+}
+.list_box {
+  float: right;
+  margin-left: 50px;
+}
+.list_box li {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.faq-question {
+  justify-content: left;
+  width: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+  font-size: 17px;
+  color: #757575;
+  text-decoration: none !important;
+}
+.faq-question:hover {
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  color: #757575 !important;
+}
+.faq-question::before {
+  content: "Q";
+  color: #949494;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.custom-pagination {
+  margin-left: 40px;
+}
+
+.custom-pagination .btn {
+  margin-right: 15px;
+  background-color: white;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.custom-pagination .btn:active,
+.custom-pagination .btn:focus {
+  background-color:#dddddd;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.pagination .active .btn{
+  border-radius: 50%;
+  background-color:#dddddd;
+}
+
+.prev_btn:focus,
+.next_btn:focus {
+  outline: none;
+}
+
+button.disabled {
+  cursor: not-allowed !important; 
+  pointer-events: none; 
+}
+
+.custom-pagination li a {
+  margin: 5px 5px;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  color: #757575;
+}
+
+.prev > a, .next > a {
+  font-weight: 400 !important;
+  color: #b5b5b5 !important;
+}
+
+.contact-section .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.help_text {
+  display: block;
+  float: left;
+}
+.help_img {
+  display: block;
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-section .border-start {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+}

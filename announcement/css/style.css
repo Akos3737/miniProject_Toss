@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  border: none !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: bulr(10px);
+  box-shadow: none !important;
+}
+
+nav img {
+  margin-top: 22px;
+  margin-left: 40px;
+  width: 82px;
+}
+
+#myNavbar {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.navbar-toggle {
+  margin-top: 16px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #2b2b2b !important;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 400;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  border-collapse: 10px;
+}
+
+#mainTitle {
+  margin-top: 180px;
+  margin-left: 40px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#list {
+  margin-top: 60px;
+  padding-left: 40px;
+}
+
+.notice-content {
+  color: #454545;
+}
+
+.notice-list li a {
+  text-decoration: none;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #454545;
+}
+
+.date {
+  margin-top: -10px;
+  margin-bottom: 25px;
+  color: #848484;
+  font-weight: 400;
+}
+
+.notice-list {
+  list-style: none;
+}
+
+.custom-pagination {
+  margin-left: 40px;
+}
+
+.custom-pagination .btn {
+  margin-right: 15px;
+  background-color: white;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.pagination .active .btn{
+  border-radius: 50%;
+  background-color:#dddddd;
+}
+
+.page_btn {
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4f4e4e;
+}
+
+.prev_btn, .next_btn {
+  font-weight: 500;
+}
+
+.page_btn:active {
+  background-color:white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.prev_btn:focus,
+.next_btn:focus {
+  outline: none;
+}
+
+button.disabled {
+  cursor: not-allowed !important; 
+  pointer-events: none; 
+}
+
+.custom-pagination li a {
+  margin: 5px 5px;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  color: #757575;
+}
+
+.prev > a, .next > a {
+  font-weight: 400 !important;
+  color: #b5b5b5 !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: white !important; 
+  }
+}
+
+
+
